@@ -2,14 +2,14 @@
 
 
 All Clarity projects are substanially following and submit themselves to the coding style standards and methodologies set by
-numerous Open Source Projects.
+numerous open source projects.
 
 All new Clarity Projects are subject to heavy linting and standardization once inagurated on the organization. As a project manager,
 or a contributor to the project, it is your duty to:
 
 - Know your responsibilities in making the project active.
 - Follow policies set by Clarity.
-- Adhere to known Code style set by Clarity and OSS Foundations.
+- Adhere to known code style set by Clarity and OSS Foundations.
 
 
 ### A. Inaguration
