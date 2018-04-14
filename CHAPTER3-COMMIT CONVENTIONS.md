@@ -23,33 +23,33 @@ The format of a commit message should be as follows:
 <footer> (optional)
 ```
 
-Any line of the commit message should not exceed 100 characters. This allows the message to be easier to read.
+Any line of the commit message should not exceed 100 characters. This allows for the message to be easier to read.
 
 ## Subject line        
 The subject line should contain a succinct description of the change with context and should not exceed 50 characters.
 
 ### Allowed `<type>`
-- build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-- ci: Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-- docs: Documentation only changes
-- feat: A new feature
-- fix: A bug fix
-- perf: A code change that improves performance
-- refactor: A code change that neither fixes a bug nor adds a feature
-- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- test: Adding missing tests or correcting existing tests
+- build: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- ci: changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- docs: documentation only changes
+- feat: a new feature
+- fix: a bug fix
+- perf: a code change that improves performance
+- refactor: a code change that affects the underlying logic, but neither fixes a bug nor adds a feature
+- style: a code change that affects conformance to a style guide, but does not affect functionality
+- test: adding missing tests or correcting existing tests
 
 ### Allowed `<scope>`
 Scope specifies the module of the code changed by the commit, if applicable.
 
 ### `<subject>` text
-* use imperative, present tense: “change” not “changed” nor “changes”
-* don't capitalize first letter
-* no single dot (.) at the end
+* Use imperative, present tense: “change” not “changed” nor “changes”
+* Do not capitalize the first letter
+* No period (.) at the end
 
 ## Message body
-* use imperative, present tense: “change” not “changed” nor “changes”
-* include motivation for the change and contrasts with previous behavior
+* Use imperative, present tense: “change” not “changed” nor “changes”
+* Include the motivation for the change and the contrasts with previous behavior
 
 ## Message footer
 
@@ -58,7 +58,7 @@ If none, it should be left blank.
 
 ### Breaking changes
 
-All breaking changes should be mentioned in footer starting with the words `BREAKING CHANGE:`, with a description of the change, justification and migration notes.
+All breaking changes should be mentioned in the footer starting with the words `BREAKING CHANGE:`, with a description of the change, justification and migration notes.
 
 ### Referencing issues
 
