@@ -20,7 +20,7 @@ The format of a commit message should be as follows:
 <BLANK LINE>
 <body>
 <BLANK LINE>
-<footer>
+<footer> (optional)
 ```
 
 Any line of the commit message should not exceed 100 characters. This allows the message to be easier to read.
@@ -53,13 +53,16 @@ Scope specifies the module of the code changed by the commit, if applicable.
 
 ## Message footer
 
+A message footer should include mentions of any breaking changes and issues closed by the commit, if any.
+If none, it should be left blank.
+
 ### Breaking changes
 
-All breaking changes should be mentioned in footer with a description of the change, justification and migration notes.
+All breaking changes should be mentioned in footer starting with the words `BREAKING CHANGE:`, with a description of the change, justification and migration notes.
 
 ### Referencing issues
 
-Closed bugs should be listed on a separate line in the footer prefixed with the "Closes" keyword. For instance:
+Closed issues should be listed on a separate line in the footer prefixed with the "Closes" keyword. For instance:
 
 ```
 Closes #24, #12, #24, #92
@@ -75,7 +78,9 @@ Add new event to $browser:
 - forward hashchange event if popstate not available
 - poll when neither popstate nor hashchange available
 
-Breaks $browser.onHashChange, which was removed (use onUrlChange instead)
+BREAKING CHANGE: Breaks $browser.onHashChange, which was removed.
+To migrate code, replace onHashChange with onUrlChange.
+
 Closes #143
 ```
 
@@ -112,7 +117,7 @@ Change the isolate scope binding options to:
 BREAKING CHANGE: isolate scope bindings definition has changed and
 the inject option for the directive controller injection was removed.
 
-To migrate the code, follow the example below:
+To migrate code, follow the example below:
 
 Before:
 
